@@ -1,20 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>我的网站</title>
-        <link rel="stylesheet" type="text/css" href="./CSS/css.css"/>
-        <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+        <title>衣服和图书分类</title>
     </head>
+    <style>
+        body
+        {
+            background-color: silver;
+        }
+        #p2{
+            font-size: 25px;
+            color: yellow;
+        }
+    </style>
+
     <body>
-        <h1>我的网站</h1>
-        <div id="nav">
-            <ul class="sonarmenu">
-                <li><a href="./About/favorites.html">我收藏的网站</a></li>
-                <li><a href="./About/resume.html">关于我</a></li>
-                <li><a href="./FAQ/FAQ.html">FAQ</a></li>
-            </ul>
-        </div>
-        <span>请联系我：<a href="https://mail.qq.com/">z3248568756@qq.com</a></span>
+    <p>
+        <ul>
+        <li><font color="red" size="7px">衣服分类(无序列表)</font>
+            <dl><font color="aqua" size="5px">
+                <dt>按类型分类(自定义列表)：</dt>
+                <dd>1)上衣(有序列表)：
+                    <ol>
+                        <li>学生装</li>
+                        <li>夹克衫</li>
+                        <li>军便装</li>
+                        <li>T恤衫</li>
+                    </ol>
+                <dd>2)裤子：
+                    <ol>
+                        <li>阔腿裤</li>
+                        <li>背带裤</li>
+                        <li>紧身裤</li>
+                        <li>喇叭裤</li>
+                    </ol>
+            </font></dl>
+       </li>
+        <li><font color="blue" size="7px">图书分类(无序列表)</font>
+            <dl><font color="#d2691e" size="5px">
+                <dt>按类型分类(自定义列表)：</dt>
+                <dd>1)文学类(有序列表)：
+                    <ol>
+                        <li>《红楼梦》</li>
+                        <li>《水浒传》</li>
+                        <li>《百年孤独》</li>
+                        <li>《钢铁是怎样炼成的》</li>
+                    </ol>
+
+                <dd>2)科幻类：
+                    <ol>
+                        <li>《三体》</li>
+                        <li>《基地》</li>
+                        <li>《海底两万里》</li>
+                        <li>《安迪密恩的觉醒》</li>
+                    </ol>
+                <dd>3)自然类：
+                    <ol>
+                        <li>《物种起源》</li>
+                        <li>《所罗门王的指环》</li>
+                        <li>《花朵的秘密生命》</li>
+                        <li>《植物知道生命的答案》</li>
+                    </ol>
+            </font> </dl>
+      </li>
+    </ul>
+        </p>
+        <p id="p2">注：整个列表结构为嵌套列表，最外层是无序列表,第二层是自定义列表，最内层是有序列表。</p>
     </body>
 </html>
