@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>主页</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/css.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+        <style>
+
+          body
+          {
+              background-image:url(images/jybk1.jpg);
+              background-repeat:repeat;
+              background-position:right top,left top;
+
+          }
+          ul.c1{
+              width: 1024px;
+              height: 30px;
+              line-height: 30px;
+              background-color: lightseagreen;
+              list-style-type:none;     /* ul前面的点  */
+              margin:0px 0px;     /* 到边框的距离 */
+          }/* 对导航栏的整体样式进行设置 */
+          ul.c1 li{
+              list-style: none;
+              float: left;
+          }/* 删除列表的样式并设置浮动 */
+          a{
+              color: white;
+              padding: 20px;
+              margin: 0px;
+              text-decoration: none;
+          }/* 设置a标签的样式 */
+
+          .nav1 {
+              position: relative;/* 设置相对定位 */
+              display: inline-block;/* 让元素具有块级元素和行内元素的特性,即将块级元素转化为内联元素 */
+          }
+
+          .nav2 {
+              display: none;/* 将某元素隐藏起来 */
+              position: absolute;/* 绝对定位 */
+              background-color: #f9f9f9;
+              min-width: 81px;/* 最小宽度 */
+          }
+
+          .nav2 a {
+              color: black;
+              padding: 12px 16px;
+              display: block;/* 将a标签设置为块级标签 */
+          }
+
+          .nav2 a:hover {
+              background-color: rgba(255,125,58,0.74);
+          }/* 鼠标悬浮时的颜色 */
+
+          .nav1:hover .nav2 {
+              display: block;
+          }/* 鼠标悬浮在元素上时,变为块级标签 */
+
+          .nav1:hover,li:hover.c1{
+              background-color: rgba(33,255,223,0.74);
+          }
+         .denglu a:hover {
+              outline: none;
+              color: #ff2657;
+              text-decoration:none;
+          }
+        </style>
+    </head>
+    <body >
+        <div class="biaoti" style="width: 100%;height:80px;background-color:#00bff3 ;height: 80px;position: relative; margin: auto;" >
+            <img src="images/ziti2.jpg" height="60px" width="484px"style="position: relative;top:10px;left:450px" />
+            <table class="denglu" width="100px" height="80px" bgcolor="#00bff3 " align="center" style="position: relative; margin: auto;top:-60px;left:450px">
+                <tr>
+                    <td style="font-size: 15px;width: 60px;" valign="top"><a href="./About/form_1.html" style="font-size: 25px" >登陆</a> <br><a href="./About/form_2.html" style="font-size: 25px">注册</a>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="menu" style="width:1024px; height: 50px;position: relative; margin: auto;/">  <!-- class选择器 -->
+            <div class="nav">
+        <ul class="c1">
+            <li class="c1"><a href="./About/resume.html">关于我</a></li>
+            <li class="c1"><a href="./About/favorites.html">收藏网站</a></li>
+            <div class="nav1">
+                <a href="#" class="cont">历史作业</a>
+                <div class="nav2">
+                    <a href="./About/homework3.html">作业3</a>
+                    <a href="./About/homework4.html">作业4</a>
+                    <a href="./About/form_1.html">作业5</a>
+                    <a href="./About/form_2.html">作业6</a>
+                    <a href="./FAQ/FAQ.html">作业8</a>
+                    <a href="./About/homework10.html">作业10</a>
+                    <a href="./About/homework11.html">作业11</a>
+                </div>
+            </div>
+        </ul>
+            </div>
+        </div>
+
+        <div class="neirong">
+            <h1>&nbsp&nbsp&nbsp&nbsp第12次作业：</h1>
+            <span style="font-size: 20px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp背景颜色、背景图像再本页面中已经体现了。</span><br><br><br>
+            <span style="font-size: 20px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp下面展示一个样式丰富的超链接(悬停有动态效果)：</span>
+            <ul class="sonarmenu" >
+                <li> <a href="https://www.baidu.com/">百度</a></li>
+                <li> <a href="https://www.zhihu.com/topic/19550228/top-answers">知乎</a></li>
+                <li> <a href="https://www.bilibili.com/">BiliBili</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>剪刀、石头、布游戏</title>
+        <script type="text/javascript">
+            function Game(){
+                var sele=document.frmGame.sel.value;
+                var com=parseInt(Math.random()*3);
+                if(sele==com){
+                    alert("电脑与你相同，结果：平局");
+                }
+                if(sele==0&&com==1){
+                    alert("电脑出剪刀，结果：你赢了");
+                }
+                if(sele==0&&com==2){
+                    alert("电脑出布，结果：你输了");
+                }
+                if(sele==1&&com==0){
+                    alert("电脑出石头，结果：你输了");
+                }
+                if(sele==1&&com==2){
+                    alert("电脑出布，结果：你赢了");
+                }
+                if(sele==2&&com==0){
+                    alert("电脑出石头，结果：你赢了");
+                }
+                if(sele==2&&com==1){
+                    alert("电脑出剪刀，结果：你输了");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <form name="frmGame">
+            <h1>石头、剪刀、布游戏</h1>
+            请选择：
+            <select name="sel">
+                <option value="0">石头</option>
+                <option value="1">剪刀</option>
+                <option value="2">布</option>
+            </select>
+            <input type="button" value="开始游戏" onclick="Game()" /><br>
+            <a href="../index.html" target="_blank">回到主页</a>
+        </form>
+
+    </body>
+</html>

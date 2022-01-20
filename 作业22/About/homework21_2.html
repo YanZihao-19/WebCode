@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  </head>
+  <body>
+    <div class="centerClass">
+      <br><br><br>
+      实时显示鼠标信息：<br>
+      鼠标x位置:
+      <input type="text" id="x"></input>
+      <br>
+      鼠标y位置:
+      <input type="text" id="y"></input>
+      <br><br><br><br><br>
+      本次作业不用管下面两按钮<br>
+      <a href="javascript:history.back()">后退</a>
+      <a href="javascript:history.forward()">前进</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script>
+
+      document.onmousemove = mouseMove;
+
+      function mouseMove(event)
+      {
+
+        var e = event || window.event;
+        var scrollx = document.documentElement.scrollLeft || document.body.scrollTop;
+        var scrolly= document.documentElement.scrollTop || document.body.scrollTop;
+        var x = e.pageX || e.clientX + scrollx;
+        var y = e.pageY || e.clientY + scrolly;
+        document.getElementById("x").value = x;
+        document.getElementById("y").value = y;
+        console.log(x);
+        console.log(y);
+
+
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Keywords" content="关键字,关键词">
+        <meta name="Description" content="描述和简介">
+        <title>Title</title>
+        <style type="text/css">
+            *{margin:0;padding:0;}
+            body,ul,li,ol,dl,dd,p,h1,h2,h3,h4,h5,h6{ margin:0;}
+            a{text-decoration:none;}
+            img{border:none;}
+            ol,ul{list-style:none;}
+            #box{
+                width: 1000px;
+                margin : 50px auto;
+            }
+            #box .btn{
+                display: inline-block;
+                width: 50px;
+                height: 30px;
+                background: #000;
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                line-height: 30px;
+                cursor: pointer;
+            }
+            #box p{
+                margin : 10px 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <span id="add" class="btn">+</span>
+            <span id="del" class="btn">-</span>
+            <p>点击按钮，只有文档字体(浏览器信息不属于)发生相应的变化</p>
+            <p></p>
+            <p>demo</p>
+            <p>作业好多呀~~~</p>
+            <img src="../images/Inked1_LI.jpg" height="240" width="240"/>
+            <br><br><br><br><br><br><br><br>
+            本次作业不用管下面两按钮<br>
+            <a href="javascript:history.back()">后退</a>
+            <a href="javascript:history.forward()">前进</a>
+        </div>
+
+        <script>
+            var oAdd = document.getElementById("add"),
+                oDel = document.getElementById("del"),
+                oBox = document.getElementById("box"),
+                size = 16;
+
+            oAdd.onclick = function (){
+                //size = size + 1;
+                //size += 1;
+                size ++;
+                if( size > 26){
+                    alert("已经最大了~~~");
+                    size = 26;
+                };
+                oBox.style.fontSize = size + "px";
+            };
+            oDel.onclick = function (){
+                // size = size - 1;
+                // size -= 1;
+                size --;
+                if( size < 16 ){
+                    alert("不能再小了~~~");
+                    size = 16;
+                }
+                oBox.style.fontSize = size + "px";
+            };
+
+            var w=window.innerWidth||document.body.clientWidth||document.documentElement.clientWidth;
+            var h=window.innerHeight||document.body.clientHeight||document.documentElement.clientHeight;
+            document.write("浏览器窗口宽"+w+"px,高："+h+"px");
+        </script>
+    </body>
+</html>

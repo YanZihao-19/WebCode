@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS选择器</title>
+        <link rel="stylesheet" href="./CSS/css.1.css">
+        <style>
+            body{
+                background-image:url('https://tse3-mm.cn.bing.net/th/id/OIP-C.GTys9m_rlrJH1SoRKHHprQHaH2?w=166&h=180&c=7&r=0&o=5&dpr=1.65&pid=1.7'),url('https://tse1-mm.cn.bing.net/th/id/OIP-C.2sjGEwqS6NmjMsq1AFPjoQAAAA?w=127&h=180&c=7&r=0&o=5&dpr=1.65&pid=1.7');
+                background-repeat:no-repeat;
+                background-position:right top,left top;
+                background-color: aquamarine;
+            }
+            #p1{
+                font-size: 21px;
+                font-family: 幼圆;
+                color: blueviolet;
+                padding: 0.2cm 8cm;
+                width: 800px;
+            }
+            .notice{
+                font-size: 15px;
+                color: black;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 style="text-align: center">图图的自我介绍</h1>
+        <p id="p1">&nbsp&nbsp&nbsp&nbsp我叫胡图图，今年三岁，我的爸爸叫胡英俊，我的妈妈叫张小丽，我家住在翻斗花园二号楼一零零一室，妈妈做的炸小肉丸最好吃，我的猫咪叫小怪，他是一只会说话的猫咪呦，小怪和图图一样是个男孩子。</p>
+        <p>&nbsp&nbsp&nbsp&nbsp图图最喜欢的好朋友是小美，图图的耳朵很大很神奇，你们看动耳神功，请问有没有烤肉串呢，那炸臭豆腐呢，那随便来一个烤红薯好了，有木有冰淇淋巧克力彩虹糖，旺旺饼干花生米，牛肉干豆奶酸奶橘子汁胡萝卜汁苹果汁。</p>
+        <br> <br> <br>
+        <ul >
+            <li>图图正在学习Web，包括
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS
+                        <ul style="font-size: 20px">
+                            <li>CSS初级</li>
+                            <li>CSS中级</li>
+                            <li>CSS高级</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li> 图图也会偶尔放松，他喜欢玩的游戏
+               <ol>
+                   <li style="color: #ffa203">风之旅人</li>
+                   <img src="./images/图片1.png">
+                   <li style="color: rgba(38,3,35,0.73)">小小梦魇</li>
+                   <img src="./images/图片2.png">
+                   <li style="color: rgba(255,19,245,0.73)">彩虹六号</li>
+                   <img src="./images/图片3.png">
+               </ol>
+            </li>
+        </ul>
+        <p class="notice">效果提醒：本页面使用了CSS的三种引用方式，以及元素选择器、类选择器、id选择器等多种选择器,<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp同时涉及到了CSS选择器的继承、层叠特性及冲突处理等。</p>
+    </body>
+</html>

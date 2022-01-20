@@ -1,0 +1,41 @@
+<!DOCTYPEhtml>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>登录界面</title>
+  <style type="text/css">
+    div#loginDiv{
+    line-height:3;
+    font-family:幼圆;
+    font-size:18px;
+    padding:20px;
+      border:3px solid #808080;
+    width:300px;
+    position:fixed;
+  }
+  </style>
+</head>
+<body>
+  <div id="loginDiv">
+  用户名:<input type="text" id="txtID"><br>
+  密码:<input type="password" id="txtPWD"><br>
+  <input type="button" value="登陆">&nbsp;&nbsp;
+  <input type="reset" value="重置">
+  </div>
+</body>
+<script type="text/javascript">
+var logDiv=document.getElementById("loginDiv");
+var divW=logDiv.clientWidth;
+var divH=logDiv.clientHeight;
+var w=window.innerWidth||document.body.clientWidth||document.documentElement.clientWidth;
+var h=window.innerHeight||document.body.clientHeight||document.documentElement.clientHeight;
+
+var x=(w-divW)/2;
+var y=(h-divH)/2;
+logDiv.style.left=x+"px";
+logDiv.style.top=y+"px";
+
+</script>
+
+
+</html>

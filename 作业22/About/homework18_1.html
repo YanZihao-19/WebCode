@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>猜数游戏</title>
+        <script>
+            var num=Math.round(Math.random()*90)+10;
+            var count = 0;
+            var input=prompt("猜数字(输入范围：10~100)：");
+            while (input != num ){
+                count++;
+                if(input >num )
+                    alert('大了');
+                else
+                    alert('小了');
+                input = prompt('继续猜数字(输入范围：10~100，输入q退出)：');
+                if(input == 'q')
+                    break;
+            }
+            if(input==num){
+                count = count +1 ;
+                alert('恭喜你,猜对了!猜数次数:'+count);
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <a href="../index.html" title="返回首页"> 返回首页</a>
+    </body>
+</html>
